@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Raleway&family=Roboto+Condensed&display=swap');
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.menudesk{
+
+  background-color: #D5BFBF;
+  height:5vw;
+  display:flex;
+  align-items:center;
+  font-family: 'Raleway', sans-serif;color:#316b83;
+  color:#316b83;
+  font-size: 1.3vw;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+
+  }
+  
+  #mihistoria, #personalizados, #amigurumis, #bebes, #consejos, #accesorios, #llaveroAjolote{
+    padding: 0px;
+    width: 15vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+  }
+  
+  #bebes{
+    font-size: larger;
+    box-shadow: 0px 0px 10px 10px  rgb(155, 92, 171)inset;
+    border-radius: 5%;
+    color: rgba(248, 61, 111, 0.724);
+    font-style: none;
+  }
+  #consejos{
+    font-size: 1.3vw
+  }
+  
+  #llaveroAjolote{
+    width: 5.5vw;
+    height: 3.5vw;
+   transform: translate(2vw)
+  }
+  
+  #mihistoria:hover{
+    font-size: larger;
+    box-shadow: 0px 0px 10px 10px  rgb(155, 92, 171)inset;
+    color: rgba(248, 61, 111, 0.724);
+    border-radius: 10%;
+    text-shadow: 3px 3px 3px #ababab;
+    cursor: pointer;
+
+
+  }
+  
+  #personalizados:hover{
+    font-size: larger;
+    box-shadow: 0px 0px 10px 10px  rgb(155, 92, 171)inset;
+    color: rgba(248, 61, 111, 0.724);
+    border-radius: 10%;
+    text-shadow: 3px 3px 3px #ababab;
+    cursor: pointer;
+
+  }
+  
+  #amigurumis:hover{
+    font-size: larger;
+    box-shadow: 0px 0px 10px 10px  rgb(155, 92, 171)inset;
+    color: rgba(248, 61, 111, 0.724);
+    border-radius: 10%;
+    text-shadow: 3px 3px 3px #ababab;
+    cursor: pointer;
+
+
+  }
+  
+
+  .menudesk div a{
+    font-family: 'Raleway', sans-serif;color:#316b83;
+    color: rgba(248, 61, 111, 0.724);
+    text-decoration: none;
+    cursor: pointer;
+
+  }
+  
+  #consejos:hover{
+    font-size: 1.5vw;
+    box-shadow: 0px 0px 10px 10px  rgb(155, 92, 171)inset;
+    color: rgba(248, 61, 111, 0.724);
+    border-radius: 10%;
+    text-shadow: 3px 3px 3px #ababab;
+    cursor: pointer;
+    
+
+  }
+
+  #llaveroAjolote:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(8px 8px 10px gray);
+  }
+  
+  #accesorios:hover{
+    font-size: larger;
+    box-shadow: 0px 0px 10px 10px  rgb(155, 92, 171)inset;
+    color: rgba(248, 61, 111, 0.724);
+    border-radius: 10%;
+    text-shadow: 3px 3px 3px #ababab;
+    cursor: pointer;
+
+
+  }
+  
+  .DropDaccesorios{
+    /* display: none; */
+    align-content:flex-start;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    background-color:rgb(155, 92, 171) ;
+    width: 15vw;
+    height: 0vw;
+    margin: 0vw;
+    font-size: 1.3vw;
+    translate: 0vw 6.5vw;
+    transition: all 0.5s ;
+    border-radius: 10%;
+
+  }
+  
+  #aretes, #llaveros, #atrapasueños {
+    overflow: hidden;
+    height: 0vw;
+    color: #D5BFBF;
+    transition: all 0.5s ease-in-in;
+  }
+  
+  
+  #accesorios:hover .DropDaccesorios  {
+    height: 9vw;
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    justify-content: flex-start;
+    
+    /* animation:animate 300ms ease-in-out forwards;
+    animation-delay: -150ms;  */
+  }
+  #accesorios:hover #aretes{
+    overflow:visible; 
+  }
+  #aretes:hover{
+    color: rgb(251, 182, 229);
+  }
+  
+  #accesorios:hover #llaveros{
+    overflow:visible; 
+  }
+  #llaveros:hover{
+    color: rgb(251, 182, 229);
+  
+  }
+  #accesorios:hover #atrapasueños{
+    overflow:visible; 
+  }
+  #atrapasueños:hover{
+    color: rgb(251, 182, 229);
+  }
+  
+  .DropDaccesorios a:hover{
+    border-bottom: .2vw solid  rgba(250, 89, 132, 0.724);
+    padding-bottom: .5vw;
+  
+  }
+  
+
+/* Galery */
+.gridContainer{
+    background-color: #316b83;
+    margin: 0vw;
+    padding: 0vw;
+    display: grid; 
+    grid-gap: 1vw;   
+    grid-template-areas:
+    'conejaGrid conejaBlancaGrid'
+    'conejaGrid conejaBlancaGrid'
+    'humorGrid girasolesGrid' 
+    'humorGrid girasolesGrid';
+}
+  
+.firstGrid{
+  grid-area:conejaGrid;
+  margin-top: 3vw;
+  margin-left: 2vw;
+  padding: 0vw;
+  display: grid; 
+  grid-gap: 0vw;   
+  grid-template-areas:
+  'coneja coneja2'
+  'coneja3 coneja2';
+}
+
+.firstGrid div{
+  border: .7vw solid  rgb(250, 149, 41) ;
+  border-radius: 15%;
+  overflow: hidden;
+  transition: all 0.5s ;
+  width: 20vw;
+  height: 42vh;
+
+
+
+}
+.firstGrid img{
+
+  width: 20vw;
+  height: 42vh;
+  cursor: pointer;
+  transition: all 0.5s ;
+
+ }
+
+ #firstGridA{
+  grid-area: coneja;
+}
+
+#firstGridB {
+  grid-area: coneja2;
+  height: 88vh;
+  width: 25vw
+}
+
+#firstGridB img {
+  height: 42vw;
+  width: 25vw
+}
+#firstGridC{
+  grid-area: coneja3;
+
+}
+
+.firstGrid div:hover{
+  border-bottom:10px solid rgb(251, 137, 156);
+  border-right:5px solid rgb(250, 149, 41)  ;
+  border-top: 10px solid rgb(187, 50, 199)  ;
+  border-left:5px solid blueviolet  ;
+}
+
+.firstGrid img:hover{
+  transform: scale(1.05);
+  filter:blur(1px);
+}
+
+.secondGrid{
+  grid-area:conejaBlancaGrid;
+  padding: 0vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  display: grid;  
+  grid-gap: 0vw;   
+  grid-template-areas: 
+  'conejaB conejaB3'
+  'conejaB2 conejaB3';
+}
+
+.secondGrid div{
+  border: .7vw solid  rgb(187, 50, 199) ;
+  border-radius: 15%;
+  overflow: hidden;
+  transition: all 0.5s ;
+  width: 20vw;
+  height: 42vh;
+
+}
+.secondGrid img{
+  width: 20vw;
+  height: 42vh;
+  transition: all 0.5s ;
+  cursor: pointer;
+  transition: all 0.5s ;
+ }
+
+ #secondGridA{
+  grid-area: conejaB;
+}
+#secondGridB{
+  grid-area: conejaB2;
+}
+
+#secondGridC{
+  grid-area: conejaB3;   
+  height: 88vh;
+  width: 22vw;  
+}
+#secondGridC img {
+  height: 88vh;
+  width: 22vw; 
+}
+
+.secondGrid div:hover{
+  border-bottom:10px solid rgb(251, 137, 156);
+  border-right:5px solid rgb(250, 149, 41)  ;
+  border-top: 10px solid rgb(187, 50, 199)  ;
+  border-left:5px solid blueviolet  ;
+}
+
+.secondGrid img:hover{
+  transform: scale(1.05);
+  filter:blur(1px);
+}
+
+.thridGrid{
+grid-area:humorGrid;
+margin-top: 2vw;
+margin-left: 2vw;
+padding: 0vw;
+display: grid; 
+grid-gap: 0vw;   
+grid-template-areas:
+'humor humor3'
+'humor2 humor3';
+}
+
+.thridGrid div{
+  border: .7vw solid  rgb(251, 137, 156) ;
+  border-radius: 15%;
+  overflow: hidden;
+  transition: all 0.5s ;
+
+}
+.thridGrid img{
+  transition: all 0.5s ;
+  cursor: pointer;
+
+
+}
+#thridGridA{
+  grid-area: humor;
+  width: 20vw;
+  height: 42vh;
+}
+#thridGridA img{
+  max-width: 21vw;
+
+}
+
+#thridGridB{
+  grid-area: humor2;
+  width: 20vw;
+  height: 42vh;
+  border-radius: 15%;
+}
+#thridGridB img{
+  width: 21vw;
+
+}
+#thridGridC{
+  grid-area: humor3;
+  width: 25vw;
+  height: 88vh;
+  border-radius: 15%;
+
+}
+
+#thridGridC img{
+  max-width: 30vw;
+  max-height: 100vh;
+
+}
+
+.thridGrid div:hover{
+  border-bottom:10px solid rgb(251, 137, 156);
+  border-right:5px solid rgb(250, 149, 41)  ;
+  border-top: 10px solid rgb(187, 50, 199)  ;
+  border-left:5px solid blueviolet  ;
+}
+
+.thridGrid img:hover{
+  transform: scale(1.05);
+  filter:blur(1px);
+}
+
+
+.fourthGrid{
+grid-area:girasolesGrid;
+margin-top: 2vw;
+margin-left: 2vw;
+padding: 0vw;
+display: grid; 
+grid-gap: 0vw;   
+grid-template-areas:
+'girasoles girasoles3'
+'girasoles2 girasoles3';
+}
+
+.fourthGrid div{
+border: .7vw solid  rgb(251, 137, 156) ;
+border-radius: 15%;
+overflow: hidden;
+transition: all 0.5s ;
+
+}
+.fourthGrid img{
+transition: all 0.5s ;
+cursor: pointer;
+
+
+}
+#fourthGridA{
+grid-area: girasoles;
+width: 20vw;
+height: 42vh;
+}
+#fourthGridA img{
+max-width: 21vw;
+
+}
+
+#fourthGridB{
+grid-area: girasoles2;
+width: 20vw;
+height: 42vh;
+border-radius: 15%;
+}
+#fourthGridB img{
+width: 21vw;
+
+}
+#fourthGridC{
+grid-area: girasoles3;
+width: 25vw;
+height: 88vh;
+border-radius: 15%;
+
+}
+
+#fourthGridC img{
+max-width: 30vw;
+max-height: 100vh;
+
+}
+
+.fourthGrid div:hover{
+border-bottom:10px solid rgb(251, 137, 156);
+border-right:5px solid rgb(250, 149, 41)  ;
+border-top: 10px solid rgb(187, 50, 199)  ;
+border-left:5px solid blueviolet  ;
+}
+
+.fourthGrid img:hover{
+transform: scale(1.05);
+filter:blur(1px);
+}
+    
+
+#lomasnuevo{
+  background-color: #6d8299;
+  margin: 0px;
+  padding: .5vw;
+  font-family: 'Raleway', sans-serif;
+  color: #D5BFBF;
+  font-size: 2vw;
+}
+
+.novedades{
+  height: 19vw;
+  background-color: #6d8299;
+  display: flex;
+  justify-content:space-between;
+  overflow-x: scroll;
+}
+
+.novedades img{
+  width:15vw;
+  height: 15vw;
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 20%;
+  transition: all 0.5s ;
+}
+
+#gorraB {
+  margin-left: 3vw ;
+}
+
+#humores{
+  margin-right: 3vw ;
+}
+
+#gorraB p, #conejaB p, #girasoles p, #llaverounicornio p, #tulipanes p, #florrosa p, #vaca p, #humores p{
+  padding: .5vw;
+  color: rgb(233, 220, 220);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(12vw, -6vw);
+  max-width: fit-content;
+  border-radius: 20%;
+  display:none;
+  transition: all 2s;
+}
+
+
+#conejaB:hover #conejaBprice, #gorraB:hover #gorraBprice, #girasoles:hover #girasolesprice, #llaverounicornio:hover #llaverounicornioprice, #tulipanes:hover #tulipanesprice, #florrosa:hover #florrosaprice, #vaca:hover #vacaprice, #humores:hover #humoresprice{
+  display:inline-flex;
+
+}
+
+.novedades img:hover{
+  box-shadow: 0px 0px 10px 10px  rgb(248, 213, 148) inset;
+  transform: scale(1.05);
+  padding: 0.5vw;
+  filter: saturate(2);
+}
+
+
+footer{
+background-color: #D5BFBF;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 15px;
+color: #316b83;
+display: flex;
+}
+
+#fullImage1, #fullImage2, #fullImage3, #fullImage4, #fullImage5, #fullImage6, #fullImage7 {
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  background-color: rgba(0, 0, 0, 0.5);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vw;  
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transform: scale(0); 
+  transition: transform 0.3s ;
+  overflow: scroll;
+
+}
+
+#fullImage1 img, #fullImage3 img, #fullImage4 img, #fullImage5 img, #fullImage7 img{
+  width: 40vw;
+  max-height: 40vw;
+  border-bottom:10px solid rgb(251, 137, 156);
+  border-right:10px solid rgb(250, 149, 41)  ;
+  border-top: 10px solid rgb(187, 50, 199)  ;
+  border-left:10px solid blueviolet  ;
+  border-radius: 15%;
+  margin-bottom: 3vw; 
+  /* overflow: scroll; */
+}
+
+#fullImage2 img, #fullImage6 img{
+
+  width: 30vw;
+  border-bottom:10px solid rgb(251, 137, 156);
+  border-right:10px solid rgb(250, 149, 41)  ;
+  border-top: 10px solid rgb(187, 50, 199)  ;
+  border-left:10px solid blueviolet  ;
+  border-radius: 15%;
+  margin-top: 1vw;  
+
+  /* max-height: fit-content;
+  overflow:scroll; */
+
+}
+
+#close1, #close2, #close3, #close4, #close5, #close6, #close7{
+  font-size: 3vw;
+  width: 4vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  font-family:fantasy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -5vw;
+  transform: translateY(-17vw);
+  border-radius: 50%;
+  cursor: pointer;
+
+  }
+
+
+  .menuMovil{
+    display:none;
+    
+  }
+  .heading{
+    display:none;
+  }
+
+
+
+  
+@media only screen and (max-width: 768px){
+  .menudesk {
+    display: none;
+  }
+
+  .heading{
+    display:flex;
+    padding: 10px;
+    /* background-color: #6d8299; */
+    background-image: linear-gradient(to top right, #D5BFBF, #6d8299);
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #instagrammobile{
+    width:11vw;
+    border-radius: 50px;
+  
+  }
+  #facebookmobile{
+    width:10vw;
+    border-radius: 50px;
+  }
+
+  #logo{
+    border-radius: 50px;
+    width:12vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    border-top: 2px solid blueviolet ;
+    border-right:2px solid rgb(187, 50, 199) ;
+    border-bottom:2px solid rgb(250, 149, 41) ;
+    border-left:2px solid rgb(251, 137, 156) ;
+  }
+
+
+  .menuMovil{
+    display: flex;
+    grid-area:menu;
+    flex-direction:column ;
+    background-color: #D5BFBF;
+    width: 30vw;
+    /* height:5vw; */
+    align-items:center;
+    font-family: 'Raleway', sans-serif;color:#316b83;
+    color:#316b83;
+    font-size: 3vw;
+  }
+
+  #mihistoriaM, #personalizadosM, #amigurumisM, #bebesM, #consejosM, #accesoriosM, #llaveroAjoloteM{
+    padding: 5vw;
+    width: 15vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+  }
+
+  #bebesM{
+    font-style: none;
+
+    font-size: larger;
+    box-shadow: 0px 0px 10px 10px  rgb(155, 92, 171)inset;
+    border-radius: 5%;
+    color: rgba(248, 61, 111, 0.724);
+  }
+
+  
+  #llaveroAjoloteM{
+    display: none;
+    width: 18vw;
+    height: 11vw;
+  }
+
+
+
+  .gridContainer{
+    /* background-color: #316b83;
+    margin: 0vw;
+    padding: 0vw;
+    display: grid; */
+    grid-gap: 0vw;    
+    grid-template-areas:
+    ' menu conejaGrid  conejaGrid '
+    ' menu conejaGrid  conejaGrid '
+    ' menu conejaBlancaGrid conejaBlancaGrid'
+    ' menu conejaBlancaGrid conejaBlancaGrid'
+    'novedadesGrid novedadesGrid novedadesGrid';
+    
+  }
+
+
+  .firstGrid{
+    /* margin-top: 2vw;*/
+    margin-left: 2vw; 
+    padding-bottom: 3vw;
+  }
+  .secondGrid{
+     /* margin-top: 5vw; */
+    margin-left: 2vw;
+    padding-left: 0vw;
+  }
+
+  .firstGrid img   {
+ border: 1vw solid  rgb(250, 149, 41) ;
+}
+  
+  .secondGrid img{
+     border: 1vw solid  rgb(187, 50, 199) ;
+
+  }
+  /* #conejaB {
+  transform: translate(25vw);  
+  }
+  #conejaB2 {
+    transform: translate(25vw);  
+  } */
+
+  #secondGridC img{
+    width: 24vw;
+    transform: translate(-2vw);  
+
+    /* transform: translate(1.5vw);   */
+
+  }
+/* 
+  #coneja {
+    transform: translate(25vw);  
+  }
+  #coneja3 {  
+    transform: translate(25vw);  
+  }
+  */
+  #coneja2 {  
+    transform: translate(-2vw);  
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
