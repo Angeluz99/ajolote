@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = 'viewport' content="width=device-width, initial-scale=1.0">
+    <title>Ajolote</title>
+    <link rel="stylesheet" href= "ajolote style.css"/>
+</head>    
+<body>
+
+    <div class="menudesk">
+        <div id = 'mihistoria'> <p >Mi historia</p></div>
+        <div id = 'bebes'><p>Bebes</p>
+            <div class="DropBebes">
+                <a href="bebe.html#conejaGrid"> <p id = "mantas"> Mantas de Apego</p></a>
+                <a href="bebe.html#humorGrid"><p id = "titeres">Títeres</p></a>
+            </div>
+        </div>
+
+        <div id = 'accesorios'><p>Accesorios</p>
+            <div class="DropDaccesorios">
+            <a href="#"><p id = aretes>Aretes</p></a>
+            <a href="#"><p id = llaveros>Llaveros</p></a>
+            <a href="#"><p id = atrapasueños>Atrapasueños</p></a>
+            </div>
+        </div>
+        <div id = 'amigurumis'><p>Amigurumis</p></div>
+        <div id = 'personalizados'><a href="flores.html"> <p>Flores</p></a></div>   
+        <div id = 'consejos'><p>Consejos para tejer</p></div>     
+        <div><img src="llaveroAjolote.png" id='llaveroAjolote' > </div>
+    </div>
+
+    <div class="banner">
+        <div id='logobanner' ><img src="AjoloteLogo.jpg" id = ajoloteLogo >
+        <p id = presentacion> Bienvenidos a mi catálogo. También puedes visitarme en redes sociales. Todo está hecho con mucho cariño. ¡Que el amor nos teja!</p>
+        </div>
+        <div><img src="columbaResized.jpg" id='columbanner' > </div>
+        <div><a href="https://www.instagram.com/tejidosajolote/" target="_blank"><img src="instagram.png" id='instagram' ></a> </div>
+        <div><a href="https://www.facebook.com/profile.php?id=100077954360237" target="_blank"><img src="facebook.png" id='facebook' ></a> </div>
+    </div>
+    
+    <div class="heading">
+        <div ><img src= 'menu.png' id = 'menubars' > </div>
+        <div><img src="AjoloteLogo.jpg" id='logo' > </div>
+        <div><img src="instagram.png" id='instagrammobile' > </div>
+        <div><img src="facebook.png" id='facebookmobile' > </div>
+    </div>
+    <div id = menuMovil class="menuMovil">
+        <div id = closeX>X</div>
+        <div id = 'mihistoriaM'> <p>Mi historia</p></div>
+        <div id = 'consejosM'><p>Consejos para tejer</p></div>
+        <div id = 'bebesM'><p>Bebes </p></div>
+        <div id = 'accesoriosM'><p>Accesorios</p>
+
+        </div>
+        <div id = 'amigurumisM'><p>Amigurumis</p></div>
+        <div id = 'personalizadosM'><p>Personalizados</p></div>        
+    </div>
+    
+
+
+    <div class="cintilla">
+        <p> Envíos a todo México.</p>
+    </div>
+    
+    <div class="body">
+        <div id = 'coneja'> <img src= 'conejaVerde.jpg' id = 'coneja'  >  °Bebes° </div>
+        <div id= 'molcajetito' > <img src="molcajetito.jpg" id= 'molcajetito' > °Accesorios°</div>
+        <div id= 'unicornio' > <img src="unicornio.jpg" id= 'unicornio' > °Amigurumis°</div>
+        <div id= 'perrito' > <img src="perrito.jpg" id= 'perrito' > °Personalizados°</div>
+
+    </div>
+
+    <div class="feet">
+        <div > <img src= 'columba.jpg' id = 'columba'> </div>
+        <div ><img src="sabias.jpg" id = 'sabias'></div>
+        <div><img src="mama.jpg" id = 'mama'></div>
+    </div>
+
+    <div class="feetdesk">
+        <div ><img src="sabias.jpg" id = 'sabiasdesk'></div>
+        <div><img src="mama.jpg" id = 'mamadesk'></div>
+    </div>
+    
+        <h5 id = lomasnuevo> Lo más nuevo</h2>
+    
+    <div class="novedades" id = "novedades">
+        <div id="gorraB"> <img src= 'gorraBlanca.jpg' ><p id = gorraBprice>$250</p>  </div>
+        <div id='conejaB'><img src="conejaBlanca.jpg" ><p id = conejaBprice>$350</p></div>
+        <div id='girasoles'><img src="girasoles.jpg" ><p id = girasolesprice>$250</p></div>
+        <div id='llaverounicornio'><img src="llaveroUnicornio.jpg" ><p id = llaverounicornioprice>$250</p></div>
+        <div id='tulipanes'><img src="tulipanes.jpg" ><p id = tulipanesprice>$350</p></div>
+        <div id='florrosa'><img src="florRosa.jpg" ><p id = florrosaprice>$250</p></div>
+        <div id='vaca'><img src="vaca.jpg" ><p id = vacaprice>$200</p></div>
+        <div id='humores'><img src="humores.jpg" ><p id = humoresprice>$350</p></div>
+
+    </div>
+
+    <footer>
+        <p>© 2022 Angel Diaz</p>
+    </footer>
+
+    <script>
+
+        function displayMenu() {
+          const list = document.getElementById("menuMovil");
+          list.style.transform = 'scale(1)';
+        }
+        document.getElementById("menubars").addEventListener("touchstart", displayMenu);
+
+        function closeMenu() {
+          const list = document.getElementById("menuMovil");
+          list.style.transform = 'scale(0)';
+        }
+        document.getElementById("closeX").addEventListener("touchstart", closeMenu);
+        
+
+        // Carrusel
+
+        const carrusel = document.getElementById("novedades");
+        let intervalo = null;
+        let step = 1;
+        let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
+
+        const start = () => {
+
+            intervalo = setInterval(function (){
+                carrusel.scrollLeft = carrusel.scrollLeft + step;
+                console.log(maxScrollLeft)
+                console.log(carrusel.scrollLeft)
+
+                if (carrusel.scrollLeft >= maxScrollLeft){
+                    step = -10;
+                } else if (carrusel.scrollLeft === 0) {
+                    step = 1;
+                }
+                }, 10)
+            
+        }
+
+        const stop = () => {
+            clearInterval(intervalo);
+        };
+
+        carrusel.addEventListener("mouseover", () => {
+            stop ()
+        })
+
+        carrusel.addEventListener("mouseout", () => {
+            start ()
+        })
+
+         start ();
+
+    </script>
+</body>
+</html>
